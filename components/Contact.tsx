@@ -38,15 +38,15 @@ export default function Contact() {
               <dt className="text-white/40">Öffnungszeiten</dt>
               <dd className="mt-1 space-y-1">
                 <div className="flex justify-between gap-8 max-w-xs">
-                  <span>Montag – Freitag</span>
-                  <span className="text-white/60">12:00 – 19:00</span>
+                  <span>Montag – Donnerstag</span>
+                  <span className="text-white/60">12:00 – 18:00</span>
                 </div>
                 <div className="flex justify-between gap-8 max-w-xs">
-                  <span>Samstag</span>
-                  <span className="text-white/60">nach Vereinbarung</span>
+                  <span>Freitag</span>
+                  <span className="text-white/60">12:00 – 16:00</span>
                 </div>
                 <div className="flex justify-between gap-8 max-w-xs">
-                  <span>Sonntag</span>
+                  <span>Samstag – Sonntag</span>
                   <span className="text-white/60">geschlossen</span>
                 </div>
               </dd>
