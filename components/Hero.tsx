@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
-import CarSilhouette from "./CarSilhouette";
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -21,15 +21,19 @@ export default function Hero() {
   return (
     <section id="top" ref={sectionRef} className="relative h-[200vh]">
       <div className="sticky top-0 h-screen overflow-hidden bg-ink">
-        <motion.div
-          style={{ scale, opacity }}
-          className="absolute inset-0 flex items-center justify-center"
-        >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(40,40,44,0.6)_0%,_rgba(10,10,10,1)_70%)]" />
-          <CarSilhouette className="relative w-[130%] max-w-none translate-y-10 opacity-90 md:w-[70%]" />
+        <motion.div style={{ scale, opacity }} className="absolute inset-0">
+          <Image
+            src="/hero-car.jpg"
+            alt="Mercedes-AMG C 63 Coupé"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/35" />
         </motion.div>
 
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/50" />
 
         <motion.div
           style={{ opacity: contentOpacity, y: contentY }}
