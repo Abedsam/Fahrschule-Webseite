@@ -40,6 +40,12 @@ export default function Successes() {
             worauf es ankommt. Ein paar Stimmen von Fahrschülern, die es bei
             uns geschafft haben.
           </p>
+          <a
+            href="/preise"
+            className="mt-4 inline-block text-sm font-medium text-accent hover:underline"
+          >
+            Preise für deinen Führerschein ansehen →
+          </a>
         </Reveal>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:items-start">
