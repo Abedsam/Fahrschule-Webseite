@@ -3,10 +3,11 @@
 import { useEffect, useState } from "react";
 
 const LINKS = [
-  { href: "#leistungen", label: "Leistungen" },
-  { href: "#ueber-uns", label: "Über uns" },
-  { href: "#bewertungen", label: "Bewertungen" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#leistungen", label: "Leistungen" },
+  { href: "/preise", label: "Preise" },
+  { href: "/#ueber-uns", label: "Über uns" },
+  { href: "/#bewertungen", label: "Bewertungen" },
+  { href: "/#kontakt", label: "Kontakt" },
 ];
 
 export default function Header() {
@@ -27,7 +28,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-display text-xl font-semibold tracking-wide">
+        <a href="/" className="font-display text-xl font-semibold tracking-wide">
           Fahrschule <span className="text-accent">DriveFit</span>
         </a>
 

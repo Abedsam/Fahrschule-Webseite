@@ -35,13 +35,13 @@ const CLASSES = [
   },
 ];
 
-export default function Services() {
+export default function Pricing() {
   return (
-    <section id="leistungen" className="bg-ink px-6 py-24 sm:py-32">
+    <section id="preise" className="bg-ink px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
-            Leistungen &amp; Preise
+            Preise
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold sm:text-5xl">
             Dein Weg zum Führerschein
