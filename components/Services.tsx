@@ -20,7 +20,8 @@ const CLASSES = [
   {
     code: "Klasse A",
     title: "Motorrad",
-    price: "ab 799 €",
+    price: "550 €",
+    priceLabel: "Grundbetrag",
     desc: "Für alle Krafträder – inklusive Grundbetrag und Sonderfahrten.",
     featured: false,
   },
