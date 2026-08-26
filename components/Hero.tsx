@@ -39,9 +39,6 @@ export default function Hero() {
           style={{ opacity: contentOpacity, y: contentY }}
           className="relative flex h-full flex-col items-center justify-center px-6 text-center"
         >
-          <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-white/70">
-            ★ 5,0 · 16 Google-Bewertungen
-          </span>
           <h1 className="font-display text-5xl font-semibold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl">
             Fahrschule
             <br />
