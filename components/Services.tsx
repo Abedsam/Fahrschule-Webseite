@@ -13,7 +13,8 @@ const CLASSES = [
   {
     code: "Klasse BE",
     title: "PKW mit Anhänger",
-    price: "ab 449 €",
+    price: "649 €",
+    priceLabel: "Grundbetrag",
     desc: "Erweiterung für Anhänger über 750 kg – ideal für Wohnwagen & Trailer.",
     featured: false,
   },
