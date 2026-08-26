@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const QUOTES = [
@@ -60,8 +61,13 @@ export default function Successes() {
 
           <Reveal delay={0.15}>
             <div className="overflow-hidden rounded-2xl border border-line bg-surface">
-              <div className="flex aspect-[3/2] items-center justify-center border-b border-line bg-black/30 text-sm text-white/30">
-                Personalausweis-Muster folgt
+              <div className="relative aspect-[3/2] border-b border-line bg-black/30">
+                <Image
+                  src="/id-card-sample.jpg"
+                  alt="Personalausweis (Muster)"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold">
