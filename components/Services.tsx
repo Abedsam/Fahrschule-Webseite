@@ -4,7 +4,9 @@ const CLASSES = [
   {
     code: "Klasse B",
     title: "PKW-Führerschein",
-    price: "ab 899 €",
+    price: "500 €",
+    priceLabel: "Grundbetrag",
+    note: "+ 70 € je Fahrstunde (45 Min.)",
     desc: "Der Klassiker für Auto & Alltag. Grundbetrag inkl. Theorieunterricht.",
     featured: true,
   },
@@ -64,8 +66,16 @@ export default function Services() {
                 </span>
                 <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
                 <p className="mt-3 text-sm text-white/60">{item.desc}</p>
-                <div className="mt-6 font-display text-3xl font-semibold">
-                  {item.price}
+                <div className="mt-6">
+                  <div className="font-display text-3xl font-semibold">
+                    {item.price}
+                  </div>
+                  {"priceLabel" in item && item.priceLabel && (
+                    <div className="mt-1 text-xs text-white/40">{item.priceLabel}</div>
+                  )}
+                  {"note" in item && item.note && (
+                    <div className="mt-2 text-xs text-accent">{item.note}</div>
+                  )}
                 </div>
               </div>
             </Reveal>
