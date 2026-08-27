@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const LINKS = [
   { href: "/#leistungen", label: "Leistungen" },
@@ -28,8 +29,18 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" className="font-display text-xl font-semibold tracking-wide">
-          Fahrschule <span className="text-accent">DriveFit</span>
+        <a href="/" className="flex items-center gap-3">
+          <Image
+            src="/logo.jpeg"
+            alt="Fahrschule DriveFit Hamburg"
+            width={44}
+            height={44}
+            className="rounded-full"
+            priority
+          />
+          <span className="hidden font-display text-lg font-semibold tracking-wide sm:inline">
+            Fahrschule <span className="text-accent">DriveFit</span>
+          </span>
         </a>
 
         <nav className="hidden gap-8 md:flex">
